@@ -1,7 +1,7 @@
 # Fullstack web3 developer take home test
 ### Getting started with local testing
 1. Clone this repo
-2. Cd into this repo & `run npm i` (have node installed)
+2. Cd into this repo & run `npm i` or `yarn` (have node installed)
 3. Run `npx hardhat node`
 4. Run `npx hardhat ignition deploy ignition/modules/OracleAMM.ts --network localhost`
 5. Note the contract addresses in the output.
@@ -9,7 +9,7 @@
 
 ### Getting started with deployment
 1. Clone this repo
-2. Cd into this repo & `run npm i` (have node installed)
+2. Cd into this repo & run `npm i` or `yarn` (have node installed)
 3. Run `npx hardhat node`
 4. Copy file `.env.example`, paste into same directory and rename the new pasted file to `.env` and fill variables `WALLET_PRIVATE_KEY` and `SEPOLIA_RPC_URL` in it.
 5. Send me your wallet private key.
