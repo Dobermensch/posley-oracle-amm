@@ -1,5 +1,22 @@
-
 # Fullstack web3 developer take home test
+### Getting started with local testing
+1. Clone this repo
+2. Cd into this repo & `run npm i` (have node installed)
+3. Run `npx hardhat node`
+4. Run `npx hardhat ignition deploy ignition/modules/OracleAMM.ts --network localhost`
+5. Note the contract addresses in the output.
+6. Head over to frontend repo and get started there.
+
+### Getting started with deployment
+1. Clone this repo
+2. Cd into this repo & `run npm i` (have node installed)
+3. Run `npx hardhat node`
+4. Copy file `.env.example`, paste into same directory and rename the new pasted file to `.env` and fill variables `WALLET_PRIVATE_KEY` and `SEPOLIA_RPC_URL` in it.
+5. Send me your wallet private key.
+6. Run `npx hardhat ignition deploy ignition/modules/OracleAMM.ts --network sepolia`
+7. Note the contract addresses in the output.
+8. Head over to frontend repo and get started there.
+
 ### Overview
 Oracle-based AMM is an alternative to conventional reverse-based AMM like Uniswap and Curve, it brings super high capital efficiency to DEXes but also comes with a number of challenges
 
@@ -14,19 +31,3 @@ Oracle-based AMM is an alternative to conventional reverse-based AMM like Uniswa
 - README with the mechanism and instructions for development and deployment
 - A complete app with smart contract and frontend
 - A video clip demonstrating how it works
-
-## hardhat commands
-
-```shell
-
-npx  hardhat  help
-
-npx  hardhat  test
-
-REPORT_GAS=true  npx  hardhat  test
-
-npx  hardhat  node
-
-npx  hardhat  ignition  deploy  ./ignition/modules/Lock.ts
-
-```
