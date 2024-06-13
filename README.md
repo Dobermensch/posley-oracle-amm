@@ -5,7 +5,7 @@
 3. Run `npx hardhat node`
 4. Run `npx hardhat ignition deploy ignition/modules/OracleAMM.ts --network localhost`
 5. Note the contract addresses in the output.
-6. Head over to frontend repo and get started there.
+6. Head over to frontend repo (https://github.com/Dobermensch/posley-frontend) and get started there.
 
 ### Getting started with deployment
 1. Clone this repo
@@ -15,7 +15,7 @@
 5. Send me your wallet private key.
 6. Run `npx hardhat ignition deploy ignition/modules/OracleAMM.ts --network sepolia`
 7. Note the contract addresses in the output.
-8. Head over to frontend repo and get started there.
+8. Head over to frontend repo (https://github.com/Dobermensch/posley-frontend) and get started there.
 
 ### Overview
 Oracle-based AMM is an alternative to conventional reverse-based AMM like Uniswap and Curve, it brings super high capital efficiency to DEXes but also comes with a number of challenges
