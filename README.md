@@ -34,3 +34,5 @@ Oracle-based AMM is an alternative to conventional reverse-based AMM like Uniswa
 
 ### Contract design
 The contract uses the pyth price oracle when swapping, adding liquidity and removing liquidity. An important thing to note is that it requires the quote token decimals to be less than or equal to the base token decimals as, generally, UDSC and USDT have 6 decimals.
+
+Another thing to note is that the contract requires ETH currently to pay the updateFees. There are two approaches here, either we let the user pay the update fee (the frontend would need to calculate the updateFee and send that amount from the user.), or we prepay the contract to subsidize the fees for the user. For the sake of keeping things simple, we're following the latter approach.
