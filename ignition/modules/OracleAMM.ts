@@ -19,7 +19,7 @@ export default buildModule('OracleAMM', (m) => {
     mockUSDCContract,
   ]);
 
-  m.send('SendingEth', oracleAMMContract, ethers.parseEther('1'));
+  m.send('SendingEth', oracleAMMContract, ethers.parseEther('0.001'));
 
   return { oracleAMMContract };
 });
