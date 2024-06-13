@@ -31,3 +31,6 @@ Oracle-based AMM is an alternative to conventional reverse-based AMM like Uniswa
 - README with the mechanism and instructions for development and deployment
 - A complete app with smart contract and frontend
 - A video clip demonstrating how it works
+
+### Contract design
+The contract uses the pyth price oracle when swapping, adding liquidity and removing liquidity. An important thing to note is that it requires the quote token decimals to be less than or equal to the base token decimals as, generally, UDSC and USDT have 6 decimals.
